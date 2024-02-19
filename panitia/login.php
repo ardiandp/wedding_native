@@ -89,7 +89,7 @@ $_SESSION["user_id"] = $row["user_id"]; // Replace with the actual column name f
 // Add other user information as needed
 
 // Redirect to main.php
-header("Location: main.php");
+header("Location: main.php?page=beranda");
 exit();
         } else {
             // Invalid credentials

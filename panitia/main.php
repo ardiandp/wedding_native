@@ -39,6 +39,7 @@ if(empty($_SESSION['username']))
 }
 else{
 */
+require ('../config/koneksi.php');
 require ('layout/header.php');
 
 $page=htmlentities($_GET['page']);
