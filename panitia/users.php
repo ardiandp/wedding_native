@@ -36,11 +36,8 @@
                   <th>Nama Lengkap</th>
                   <th>Aktif</th>
                   <th style="width: 40px"> Aksi</th>
-     
-    <!-- Modal content for adding user -->
-  </div>
-</th>
-                </tr>
+                </tr> 
+            
       <tbody>
         <?php
         $users=mysqli_query($conn,"SELECT * FROM users");

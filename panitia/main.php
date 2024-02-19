@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 //initialize the session
 /*
 if (!isset($_SESSION)) {

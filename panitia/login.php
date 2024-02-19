@@ -85,7 +85,10 @@ $row = $result->fetch_assoc();
 
 // Store user information in session variables
 $_SESSION["username"] = $row["username"];
-$_SESSION["user_id"] = $row["user_id"]; // Replace with the actual column name for user ID
+$_SESSION["email"] = $row["email"];
+$_SESSION["no_hp"] = $row["no_hp"];
+$_SESSION["nama_lengkap"] = $row["nama_lengkap"];
+$_SESSION["user_id"] = $row["id"]; // Replace with the actual column name for user ID
 // Add other user information as needed
 
 // Redirect to main.php

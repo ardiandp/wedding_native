@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-require 'config/koneksi.php';
-$id=$_GET['username'];
-$setting=mysqli_query($conn,"SELECT * FROM setting where username='$id' ");
-$data=mysqli_fetch_array($setting);
-?>
+
     <head>
         <meta charset="utf-8">
-        <title><?php echo $data['title'] ?></title>
+        <title>Haidar&Nur - Wedding Rumah Jolgo DIan Mustika</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -49,7 +44,7 @@ $data=mysqli_fetch_array($setting);
                 <div class="container px-0">
                     <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
                         <a href="index.html" class="navbar-brand">
-                            <h4 class="text-primary display-6 fw-bold mb-0"><?php echo $data['c_suami'] ?><strong class="text-secondary">&</strong><?php echo $data['c_istri'] ?></h4>
+                            <h4 class="text-primary display-6 fw-bold mb-0">Haidar<strong class="text-secondary">&</strong>Nur</h4>
                         </a>
                         <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="fa fa-bars text-primary"></span>
@@ -89,11 +84,11 @@ $data=mysqli_fetch_array($setting);
                         <div class="carousel-caption">
                             <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
                                 <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;"><?php echo $data['text1'] ?></h4>
+                                    <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">WE ARE GETTING MARRIED</h4>
                                 </div>
-                                <h1 class="display-1 text-capitalize text-white mb-3"><?php echo $data['c_suami']?> <i class="fa fa-heart text-primary"></i> <?php echo $data['c_istri']?></h1>
+                                <h1 class="display-1 text-capitalize text-white mb-3">Evelyn <i class="fa fa-heart text-primary"></i> Anthony</h1>
                                 <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5" style="border-style: double;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;"><?php echo $data['waktu'] ?></h4>
+                                    <h4 class="text-white text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">June 28 2024</h4>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="#">RSVP Now</a>
